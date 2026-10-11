@@ -1,0 +1,8 @@
+Product: Vexui  React 19 Tailwind CSS Admin Dashboard Template
+Author: SM Pixel Craft
+
+Customer use of Vexui is governed by the applicable marketplace license.
+
+Third-party libraries and any bundled third-party assets remain subject to their own licenses. Customers must follow the original license terms when redistributing, modifying, or using those dependencies and assets.
+
+This file is informational only and does not replace the marketplace license terms.

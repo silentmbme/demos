@@ -1,0 +1,60 @@
+TITLE
+
+Vexui  React 19 Tailwind CSS Admin Dashboard Template
+
+SHORT DESCRIPTION
+
+Vexui is a modern React 19, TypeScript and Tailwind CSS admin dashboard template built for SaaS, eCommerce, CRM, analytics, finance and modern business applications.
+
+FULL DESCRIPTION
+
+Vexui is a responsive, TypeScript-first admin dashboard template with a consistent application shell, dashboard views, workflow pages, reusable interface components, and standalone documentation. It is built with React 19, TanStack Start, TanStack Router, Vite, Tailwind CSS v4, ApexCharts, and lucide-react.
+
+The included source provides eight operational dashboard views, application pages for email, chat, calendar, tasks, Kanban, and file management, plus eCommerce, CRM, projects, invoices, profile, settings, authentication, forms, tables, charts, and UI component examples. Runtime settings support light, dark, and system appearance modes along with accent skin, sidebar, header, and layout-width preferences.
+
+KEY FEATURES
+
+- React 19 and TypeScript source
+- TanStack Start and TanStack Router file-based routing
+- Tailwind CSS v4 styling
+- Eight dashboards: Executive, Analytics, eCommerce, CRM, Projects, Finance, Marketing, and SaaS
+- Six workflow applications: Email, Chat, Calendar, Tasks, Kanban, and File Manager
+- Reusable UI components, form pages, table pages, and ApexCharts examples
+- eCommerce, CRM, projects, invoices, profile, settings, pricing, and FAQ pages
+- Authentication, email templates, and error/system pages
+- Responsive application shell and mobile navigation
+- Light, dark, and system modes with live layout preferences
+- Local logo, user-image, favicon, and social-preview assets
+- Standalone customer documentation
+
+TECH STACK
+
+React 19
+TypeScript
+Tailwind CSS v4
+Vite
+TanStack Start
+TanStack Router
+ApexCharts
+lucide-react
+
+TAGS
+
+react admin
+react dashboard
+react admin template
+react dashboard template
+tailwind css
+tailwind dashboard
+tailwind admin
+typescript
+vite
+admin dashboard
+admin template
+saas dashboard
+ecommerce dashboard
+crm dashboard
+analytics dashboard
+responsive admin
+dark mode
+light mode

@@ -1,0 +1,37 @@
+{
+  "method": "Built-in image_gen",
+  "assets": [
+    {
+      "file": "margherita-pizza.png",
+      "prompt": "Use case: product-mockup. Asset type: restaurant POS menu photograph. Subject: Margherita pizza with tomato mozzarella and basil. Photorealistic professional food photography, single serving centered on a warm neutral restaurant tabletop, soft natural window lighting, appetizing real textures, three-quarter overhead view, entire dish or drink visible, square composition suitable for cropping. No text, logos, people, or watermark."
+    },
+    {
+      "file": "vegetable-pizza.png",
+      "prompt": "Use case: product-mockup. Asset type: restaurant POS menu photograph. Subject: Roasted vegetable pizza with peppers mushrooms and olives. Photorealistic professional food photography, single serving centered on a warm neutral restaurant tabletop, soft natural window lighting, appetizing real textures, three-quarter overhead view, entire dish or drink visible, square composition suitable for cropping. No text, logos, people, or watermark."
+    },
+    {
+      "file": "garden-salad.png",
+      "prompt": "Use case: product-mockup. Asset type: restaurant POS menu photograph. Subject: Garden salad with mixed greens cucumber and lemon dressing. Photorealistic professional food photography, single serving centered on a warm neutral restaurant tabletop, soft natural window lighting, appetizing real textures, three-quarter overhead view, entire dish or drink visible, square composition suitable for cropping. No text, logos, people, or watermark."
+    },
+    {
+      "file": "greek-salad.png",
+      "prompt": "Use case: product-mockup. Asset type: restaurant POS menu photograph. Subject: Greek salad with feta olives tomato and cucumber. Photorealistic professional food photography, single serving centered on a warm neutral restaurant tabletop, soft natural window lighting, appetizing real textures, three-quarter overhead view, entire dish or drink visible, square composition suitable for cropping. No text, logos, people, or watermark."
+    },
+    {
+      "file": "mushroom-pasta.png",
+      "prompt": "Use case: product-mockup. Asset type: restaurant POS menu photograph. Subject: Creamy mushroom penne pasta with parmesan. Photorealistic professional food photography, single serving centered on a warm neutral restaurant tabletop, soft natural window lighting, appetizing real textures, three-quarter overhead view, entire dish or drink visible, square composition suitable for cropping. No text, logos, people, or watermark."
+    },
+    {
+      "file": "grilled-chicken.png",
+      "prompt": "Use case: product-mockup. Asset type: restaurant POS menu photograph. Subject: Grilled herb chicken plate with potatoes and seasonal greens. Photorealistic professional food photography, single serving centered on a warm neutral restaurant tabletop, soft natural window lighting, appetizing real textures, three-quarter overhead view, entire dish or drink visible, square composition suitable for cropping. No text, logos, people, or watermark."
+    },
+    {
+      "file": "iced-latte.png",
+      "prompt": "Use case: product-mockup. Asset type: restaurant POS menu photograph. Subject: Iced latte in a clear glass with espresso milk and ice. Photorealistic professional food photography, single serving centered on a warm neutral restaurant tabletop, soft natural window lighting, appetizing real textures, three-quarter overhead view, entire dish or drink visible, square composition suitable for cropping. No text, logos, people, or watermark."
+    },
+    {
+      "file": "lemonade.png",
+      "prompt": "Use case: product-mockup. Asset type: restaurant POS menu photograph. Subject: Fresh sparkling lemonade in a clear glass with lemon and mint. Photorealistic professional food photography, single serving centered on a warm neutral restaurant tabletop, soft natural window lighting, appetizing real textures, three-quarter overhead view, entire dish or drink visible, square composition suitable for cropping. No text, logos, people, or watermark."
+    }
+  ]
+}

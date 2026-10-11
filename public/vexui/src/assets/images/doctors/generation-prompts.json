@@ -1,0 +1,34 @@
+{
+  "generationMethod": "Built-in image_gen tool",
+  "purpose": "Fictional sample doctor portraits for the Hospital Management dashboard.",
+  "assets": [
+    {
+      "name": "amelia-brooks",
+      "original": "amelia-brooks.png",
+      "webAsset": "amelia-brooks.jpg",
+      "webAssetDimensions": "384 × 384",
+      "prompt": "Use case: photorealistic-natural. Asset type: square doctor portrait for a hospital dashboard avatar. Subject: a fictional woman physician in her early forties with shoulder-length chestnut brown hair, wearing a clean white medical coat over navy blue scrubs and a stethoscope, friendly professional expression, looking directly at the camera. Composition: one person only, centered head-and-shoulders portrait, full head visible with generous space above and on both sides to allow circular avatar cropping. Background: softly blurred pale blue-gray hospital interior. Lighting: soft natural daylight, realistic skin texture, consistent polished medical staff directory photography. No text, no badges with writing, no logos, no watermark. This is an invented person, not a real doctor. Generate a square image."
+    },
+    {
+      "name": "daniel-chen",
+      "original": "daniel-chen.png",
+      "webAsset": "daniel-chen.jpg",
+      "webAssetDimensions": "384 × 384",
+      "prompt": "Use case: photorealistic-natural. Asset type: square doctor portrait for a hospital dashboard avatar. Subject: a fictional man physician in his early forties with East Asian features, short neat black hair and thin round glasses, wearing a clean white medical coat over navy blue scrubs and a stethoscope, friendly professional expression, looking directly at the camera. Composition: one person only, centered head-and-shoulders portrait, full head visible with generous space above and on both sides for circular avatar cropping. Background: softly blurred pale blue-gray hospital interior. Lighting: soft natural daylight, realistic skin texture, polished medical staff directory photography. No text, no logos, no watermark. Invented person, not a real doctor. Square image."
+    },
+    {
+      "name": "maya-patel",
+      "original": "maya-patel.png",
+      "webAsset": "maya-patel.jpg",
+      "webAssetDimensions": "384 × 384",
+      "prompt": "Use case: photorealistic-natural. Asset type: square doctor portrait for a hospital dashboard avatar. Subject: a fictional woman physician in her mid-thirties with South Asian features and dark brown hair neatly tied back, wearing a clean white medical coat over navy blue scrubs and a stethoscope, friendly professional expression, looking directly at the camera. Composition: one person only, centered head-and-shoulders portrait, full head visible with generous space above and on both sides for circular avatar cropping. Background: softly blurred pale blue-gray hospital interior. Lighting: soft natural daylight, realistic skin texture, polished medical staff directory photography. No text, no logos, no watermark. Invented person, not a real doctor. Square image."
+    },
+    {
+      "name": "james-wilson",
+      "original": "james-wilson.png",
+      "webAsset": "james-wilson.jpg",
+      "webAssetDimensions": "384 × 384",
+      "prompt": "Use case: photorealistic-natural. Asset type: square doctor portrait for a hospital dashboard avatar. Subject: a fictional man physician in his late forties with short salt-and-pepper hair and a neatly trimmed beard, wearing a clean white medical coat over navy blue scrubs and a stethoscope, friendly professional expression, looking directly at the camera. Composition: one person only, centered head-and-shoulders portrait, full head visible with generous space above and on both sides for circular avatar cropping. Background: softly blurred pale blue-gray hospital interior. Lighting: soft natural daylight, realistic skin texture, polished medical staff directory photography. No text, no logos, no watermark. Invented person, not a real doctor. Square image."
+    }
+  ]
+}

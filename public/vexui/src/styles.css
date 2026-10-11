@@ -1,0 +1,485 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Vexui design system.
+ * All colors are oklch tokens. Skins swap only the primary ramp.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-header: var(--header);
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --shadow-card: 0 1px 2px oklch(0.2 0.04 265 / 0.04), 0 8px 24px oklch(0.2 0.04 265 / 0.05);
+  --shadow-pop: 0 12px 32px oklch(0.2 0.04 265 / 0.12);
+}
+
+:root {
+  color-scheme: light;
+  --radius: 0.75rem;
+
+  /* Sapphire is the default accent ramp. */
+  --accent-50: oklch(0.975 0.012 250);
+  --accent-100: oklch(0.95 0.028 250);
+  --accent-200: oklch(0.9 0.06 250);
+  --accent-300: oklch(0.825 0.105 250);
+  --accent-400: oklch(0.71 0.15 250);
+  --accent-500: oklch(0.64 0.175 250);
+  --accent-600: #0868f7;
+  --accent-700: oklch(0.49 0.17 251);
+  --accent-800: oklch(0.41 0.135 252);
+  --accent-900: oklch(0.34 0.095 253);
+  --accent-950: oklch(0.23 0.055 254);
+  --accent-color: var(--accent-600);
+  --accent-hover: var(--accent-700);
+  --accent-active: var(--accent-800);
+  --accent-soft: color-mix(in oklab, var(--accent-600) 11%, transparent);
+  --accent-border: color-mix(in oklab, var(--accent-600) 28%, var(--border));
+  --accent-ring: color-mix(in oklab, var(--accent-600) 32%, transparent);
+  --accent-contrast: oklch(0.99 0 0);
+  --primary: var(--accent-600);
+  --primary-hover: var(--accent-hover);
+  --primary-active: var(--accent-active);
+  --primary-foreground: var(--accent-contrast);
+  --primary-soft: var(--accent-soft);
+  --background: oklch(0.976 0.004 268);
+  --foreground: oklch(0.279 0.031 262);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.279 0.031 262);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.279 0.031 262);
+
+  --secondary: oklch(0.968 0.007 247.9);
+  --secondary-foreground: oklch(0.32 0.03 264);
+  --muted: oklch(0.968 0.007 247.9);
+  --muted-foreground: oklch(0.58 0.03 257);
+  --accent: oklch(0.962 0.011 264);
+  --accent-foreground: oklch(0.3 0.03 264);
+
+  --destructive: oklch(0.628 0.221 26.4);
+  --destructive-foreground: oklch(0.99 0 0);
+  --success: oklch(0.723 0.183 149.6);
+  --success-foreground: oklch(0.99 0 0);
+  --warning: oklch(0.769 0.166 70.1);
+  --warning-foreground: oklch(0.25 0.03 264);
+  --info: oklch(0.715 0.129 215.2);
+  --info-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.925 0.008 262);
+  --input: oklch(0.925 0.008 262);
+  --ring: var(--primary);
+
+  --chart-1: var(--primary);
+  --chart-2: oklch(0.715 0.129 215.2);
+  --chart-3: oklch(0.723 0.183 149.6);
+  --chart-4: oklch(0.769 0.166 70.1);
+  --chart-5: oklch(0.65 0.19 350);
+
+  --header: oklch(1 0 0 / 0.82);
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.42 0.03 258);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.966 0.008 264);
+  --sidebar-accent-foreground: oklch(0.3 0.03 264);
+  --sidebar-border: oklch(0.93 0.008 262);
+  --sidebar-ring: var(--primary);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: oklch(0.185 0.021 265);
+  --foreground: oklch(0.955 0.006 248);
+  --card: oklch(0.229 0.024 265);
+  --card-foreground: oklch(0.955 0.006 248);
+  --popover: oklch(0.229 0.024 265);
+  --popover-foreground: oklch(0.955 0.006 248);
+
+  --secondary: oklch(0.276 0.028 262);
+  --secondary-foreground: oklch(0.95 0.006 248);
+  --muted: oklch(0.276 0.028 262);
+  --muted-foreground: oklch(0.68 0.026 257);
+  --accent: oklch(0.29 0.03 262);
+  --accent-foreground: oklch(0.96 0.006 248);
+
+  --warning-foreground: oklch(0.2 0.02 264);
+
+  --border: oklch(1 0 0 / 0.1);
+  --input: oklch(1 0 0 / 0.14);
+
+  --header: oklch(0.229 0.024 265 / 0.82);
+  --sidebar: oklch(0.212 0.023 265);
+  --sidebar-foreground: oklch(0.8 0.02 255);
+  --sidebar-accent: oklch(0.28 0.03 262);
+  --sidebar-accent-foreground: oklch(0.97 0.006 248);
+  --sidebar-border: oklch(1 0 0 / 0.08);
+}
+
+/* ---- Buyer-facing accent themes ---- */
+
+[data-skin="sapphire"] {
+  --accent-50: oklch(0.975 0.012 250);
+  --accent-100: oklch(0.95 0.028 250);
+  --accent-200: oklch(0.9 0.06 250);
+  --accent-300: oklch(0.825 0.105 250);
+  --accent-400: oklch(0.71 0.15 250);
+  --accent-500: oklch(0.64 0.175 250);
+  --accent-600: #0868f7;
+  --accent-700: oklch(0.49 0.17 251);
+  --accent-800: oklch(0.41 0.135 252);
+  --accent-900: oklch(0.34 0.095 253);
+  --accent-950: oklch(0.23 0.055 254);
+}
+
+[data-skin="emerald"] {
+  --accent-50: oklch(0.975 0.016 163);
+  --accent-100: oklch(0.945 0.038 163);
+  --accent-200: oklch(0.895 0.075 163);
+  --accent-300: oklch(0.82 0.12 163);
+  --accent-400: oklch(0.72 0.145 163);
+  --accent-500: oklch(0.665 0.15 163);
+  --accent-600: oklch(0.61 0.145 163);
+  --accent-700: oklch(0.52 0.125 163);
+  --accent-800: oklch(0.44 0.1 163);
+  --accent-900: oklch(0.36 0.07 163);
+  --accent-950: oklch(0.24 0.04 163);
+}
+
+[data-skin="violet"] {
+  --accent-50: oklch(0.975 0.018 302);
+  --accent-100: oklch(0.95 0.042 302);
+  --accent-200: oklch(0.9 0.085 302);
+  --accent-300: oklch(0.82 0.14 302);
+  --accent-400: oklch(0.7 0.2 302);
+  --accent-500: oklch(0.63 0.235 302);
+  --accent-600: oklch(0.57 0.225 302);
+  --accent-700: oklch(0.49 0.2 302);
+  --accent-800: oklch(0.41 0.16 302);
+  --accent-900: oklch(0.34 0.115 302);
+  --accent-950: oklch(0.23 0.07 302);
+}
+
+[data-skin="rose"] {
+  --accent-50: oklch(0.975 0.014 13);
+  --accent-100: oklch(0.95 0.032 13);
+  --accent-200: oklch(0.9 0.065 13);
+  --accent-300: oklch(0.825 0.115 13);
+  --accent-400: oklch(0.72 0.17 13);
+  --accent-500: oklch(0.655 0.2 13);
+  --accent-600: oklch(0.61 0.205 13);
+  --accent-700: oklch(0.52 0.185 13);
+  --accent-800: oklch(0.44 0.15 13);
+  --accent-900: oklch(0.36 0.11 13);
+  --accent-950: oklch(0.24 0.065 13);
+}
+
+[data-skin="orange"] {
+  --accent-50: oklch(0.98 0.018 55);
+  --accent-100: oklch(0.955 0.04 55);
+  --accent-200: oklch(0.91 0.075 55);
+  --accent-300: oklch(0.85 0.12 55);
+  --accent-400: oklch(0.76 0.15 55);
+  --accent-500: oklch(0.7 0.17 55);
+  --accent-600: oklch(0.64 0.18 55);
+  --accent-700: oklch(0.55 0.165 52);
+  --accent-800: oklch(0.46 0.135 49);
+  --accent-900: oklch(0.38 0.1 47);
+  --accent-950: oklch(0.26 0.06 45);
+  --accent-contrast: oklch(0.22 0.025 45);
+}
+
+[data-skin="cyan"] {
+  --accent-50: oklch(0.975 0.014 215);
+  --accent-100: oklch(0.945 0.032 215);
+  --accent-200: oklch(0.895 0.065 215);
+  --accent-300: oklch(0.825 0.105 215);
+  --accent-400: oklch(0.74 0.13 215);
+  --accent-500: oklch(0.67 0.135 215);
+  --accent-600: oklch(0.61 0.12 215);
+  --accent-700: oklch(0.52 0.105 215);
+  --accent-800: oklch(0.44 0.085 215);
+  --accent-900: oklch(0.36 0.06 215);
+  --accent-950: oklch(0.24 0.035 215);
+}
+
+[data-skin="graphite"] {
+  --accent-50: oklch(0.97 0.005 260);
+  --accent-100: oklch(0.93 0.009 260);
+  --accent-200: oklch(0.85 0.014 260);
+  --accent-300: oklch(0.74 0.02 260);
+  --accent-400: oklch(0.62 0.028 260);
+  --accent-500: oklch(0.53 0.032 260);
+  --accent-600: oklch(0.45 0.032 260);
+  --accent-700: oklch(0.38 0.03 260);
+  --accent-800: oklch(0.31 0.027 260);
+  --accent-900: oklch(0.25 0.022 260);
+  --accent-950: oklch(0.18 0.016 260);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    /* Keep off-canvas UI and wide table contents from expanding the document.
+       Tables retain their own .table-scroll / overflow-x-auto scrolling. */
+    max-width: 100%;
+    overflow-x: clip;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "cv02", "cv03";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-foreground);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--color-muted-foreground) 30%, transparent);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+@utility vexui-card {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+@utility icon-tile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-lg);
+  background: color-mix(in oklab, var(--color-primary) 12%, transparent);
+  color: var(--color-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ApexCharts tone-down */
+.apexcharts-tooltip {
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid var(--color-border) !important;
+  box-shadow: var(--shadow-pop) !important;
+  background: var(--color-popover) !important;
+  color: var(--color-popover-foreground) !important;
+}
+.apexcharts-tooltip-title {
+  background: var(--color-muted) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  font-weight: 600 !important;
+}
+.apexcharts-legend-text {
+  color: var(--color-muted-foreground) !important;
+}
+
+/* ---- Dark sidebar tone (independent of the app color mode) ---- */
+.vexui-sidebar[data-tone="dark"] {
+  --sidebar: oklch(0.212 0.023 265);
+  --sidebar-foreground: oklch(0.8 0.02 255);
+  --sidebar-accent: oklch(0.28 0.03 262);
+  --sidebar-accent-foreground: oklch(0.97 0.006 248);
+  --sidebar-border: oklch(1 0 0 / 0.08);
+  --foreground: oklch(0.955 0.006 248);
+  --muted-foreground: oklch(0.68 0.026 257);
+  --border: oklch(1 0 0 / 0.12);
+  --card: oklch(0.229 0.024 265);
+  --card-foreground: oklch(0.955 0.006 248);
+  color: var(--color-sidebar-foreground);
+}
+
+/* ---- Tables ---- */
+@utility table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+
+/* Tables in legacy screens use this same containment behavior without requiring
+   each screen to be migrated at once. */
+@layer base {
+  [class~="overflow-x-auto"]:has(> table) {
+    width: 100%;
+    max-width: 100%;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+}
+}
+
+@utility vexui-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 13.5px;
+
+  & thead th {
+    background: var(--color-muted);
+    color: var(--color-muted-foreground);
+    font-weight: 600;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: start;
+    padding: 0.625rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  & tbody td {
+    padding: 0.75rem 1rem;
+    color: var(--color-card-foreground);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  & tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  & tbody tr:hover td {
+    background: color-mix(in oklab, var(--color-muted) 60%, transparent);
+  }
+}
+
+/* ---- Native form controls follow the active theme + skin ---- */
+@layer base {
+  input,
+  select,
+  textarea,
+  button {
+    font: inherit;
+    color-scheme: inherit;
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  select,
+  textarea {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    border-color: var(--color-input);
+    caret-color: var(--color-primary);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-muted-foreground);
+  }
+
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    border-color: var(--color-primary);
+  }
+
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="range"],
+  progress {
+    accent-color: var(--color-primary);
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-primary) 26%, transparent);
+    color: var(--color-foreground);
+  }
+}
+
+/* ApexCharts follows the tokens for chrome the JS options do not cover */
+.apexcharts-canvas text {
+  fill: var(--color-muted-foreground) !important;
+}
+.apexcharts-canvas .apexcharts-title-text,
+.apexcharts-canvas .apexcharts-datalabel-value {
+  fill: var(--color-foreground) !important;
+}
+.apexcharts-gridline,
+.apexcharts-xaxis line,
+.apexcharts-yaxis line {
+  stroke: var(--color-border) !important;
+}
+.apexcharts-radialbar-track .apexcharts-radialbar-area {
+  stroke: var(--color-muted) !important;
+}
